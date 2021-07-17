@@ -800,7 +800,13 @@
             <div class="contact-inputs grid">
               <div class="contact-content">
                 <label for="contact-form" class="contact-lable">Name</label>
-                <input type="text" name="name" class="contact-input" required />
+                <input
+                  type="text"
+                  id="contact-name"
+                  name="name"
+                  class="contact-input"
+                  required
+                />
               </div>
               <div class="contact-content">
                 <label for="contact-form" class="contact-lable">Email</label>
@@ -808,6 +814,7 @@
                   type="email"
                   name="mail"
                   class="contact-input"
+                  id="contact-email"
                   required
                 />
               </div>
@@ -817,9 +824,10 @@
               <input type="text" class="contact-input" />
             </div> -->
             <div class="contact-content">
-              <label for="" class="contact-lable">Message</label>
+              <label for="contact-form" class="contact-lable">Message</label>
               <textarea
                 name=""
+                id="contact-message"
                 id=""
                 cols="0"
                 rows="7"
@@ -827,7 +835,7 @@
                 required
               ></textarea>
             </div>
-            <div onClick="this.parentNode.submit();">
+            <div onClick="sendMail();">
               <a class="button button-flex">
                 Send Message
                 <i class="uil uil-message button-icon"></i>

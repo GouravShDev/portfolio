@@ -163,3 +163,14 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+
+// Send mail from Contact Form
+
+function sendMail() {
+    const name = document.getElementById('contact-name').value
+    const email = document.getElementById('contact-email').value
+    const message = document.getElementById('contact-message').value
+    window.location.href = 'mailto:gourav0sharma1@gmail.com?subject=Subject - ' + name + ' (' + email + ')' + '&body=' + message;
+
+}
