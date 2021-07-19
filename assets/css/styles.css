@@ -296,7 +296,7 @@ img {
 }
 
 .home-social-icon {
-  font-size: 1.25rem;
+  font-size: 1.55rem;
   color: var(--first-color);
 }
 
@@ -312,7 +312,10 @@ img {
 .home-blob-img {
   width: 160px;
 }
-
+.home-img {
+  display: flex;
+  justify-content: center;
+}
 .home-data {
   grid-column: 2/3;
 }
@@ -332,6 +335,7 @@ img {
 .home-scroll-button {
   color: var(--first-color);
   transition: 0.3s;
+  margin-left: 5rem;
 }
 .home-scroll-button:hover {
   transform: translateY(0.25rem);
@@ -960,6 +964,9 @@ img {
   .home-blob {
     width: 180px;
   }
+  .home-scroll-button {
+    margin-left: 0;
+  }
 
   .skill-title {
     font-size: var(--normal-font-size);
@@ -991,9 +998,10 @@ img {
   }
   .home-img {
     order: 1;
-    /* justify-content: end; */
   }
-
+  .home-scroll-button {
+    margin-left: 3rem;
+  }
   .about-container,
   .skills-container,
   .portfolio-content,
@@ -1144,8 +1152,8 @@ img {
   .hom-blob {
     width: 320px;
   }
-  .home-social {
-    transform: translateX(-6rem);
+  .home-img {
+    justify-content: start;
   }
 
   .services-container {
